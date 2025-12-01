@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details - BookVerse</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">Book<span class="logo-accent">Verse</span></a>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search books..." id="searchInput">
+                        <button class="search-btn"><i class="icon-search">🔍</i></button>
+                    </div>
+                    <a href="cart.html" class="cart-icon">
+                        <span class="icon-cart">🛒</span>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Book Detail Section -->
+    <section class="book-detail-section section-padding">
+        <div class="container">
+            <div class="book-detail-layout">
+                <div class="book-detail-image">
+                    <img src="https://via.placeholder.com/500x700/1a237e/ffffff?text=Book+Cover" alt="Book Cover" id="bookCover">
+                </div>
+                <div class="book-detail-info">
+                    <h1 id="bookTitle">The Great Adventure</h1>
+                    <p class="book-detail-author" id="bookAuthor">By John Smith</p>
+                    <div class="book-detail-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-text">(4.8) | 234 Reviews</span>
+                    </div>
+                    <div class="book-detail-price">
+                        <span class="price" id="bookPrice">$24.99</span>
+                        <span class="old-price" id="oldPrice">$29.99</span>
+                        <span class="discount">Save 17%</span>
+                    </div>
+                    <div class="book-detail-description">
+                        <h3>Description</h3>
+                        <p id="bookDescription">Embark on an extraordinary journey through uncharted territories in this captivating tale of adventure, courage, and discovery. Follow our hero as they navigate through challenges, meet fascinating characters, and uncover secrets that will change everything. A must-read for adventure enthusiasts and lovers of great storytelling.</p>
+                    </div>
+                    <div class="book-detail-meta">
+                        <div class="meta-item">
+                            <strong>Genre:</strong> <span id="bookGenre">Fiction, Adventure</span>
+                        </div>
+                        <div class="meta-item">
+                            <strong>Pages:</strong> <span id="bookPages">384</span>
+                        </div>
+                        <div class="meta-item">
+                            <strong>Publisher:</strong> <span id="bookPublisher">BookVerse Publishing</span>
+                        </div>
+                        <div class="meta-item">
+                            <strong>Language:</strong> <span id="bookLanguage">English</span>
+                        </div>
+                    </div>
+                    <div class="book-detail-actions">
+                        <button class="btn btn-primary btn-large add-to-cart" id="addToCartBtn" data-book-id="1">
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-secondary btn-large">
+                            Add to Wishlist
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Books Section -->
+            <div class="related-books section-padding">
+                <h2 class="section-title">Related Books</h2>
+                <div class="books-grid">
+                    <div class="book-card fade-in">
+                        <div class="book-image">
+                            <img src="https://via.placeholder.com/300x400/1a237e/ffffff?text=Related+1" alt="Book Cover">
+                            <div class="book-overlay">
+                                <a href="book-detail.html" class="btn btn-sm">View Details</a>
+                            </div>
+                        </div>
+                        <div class="book-info">
+                            <h3 class="book-title">Adventure Tales</h3>
+                            <p class="book-author">Jane Doe</p>
+                            <div class="book-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-text">(4.5)</span>
+                            </div>
+                            <div class="book-price">
+                                <span class="price">$19.99</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm add-to-cart" data-book-id="5">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="book-card fade-in">
+                        <div class="book-image">
+                            <img src="https://via.placeholder.com/300x400/1a237e/ffffff?text=Related+2" alt="Book Cover">
+                            <div class="book-overlay">
+                                <a href="book-detail.html" class="btn btn-sm">View Details</a>
+                            </div>
+                        </div>
+                        <div class="book-info">
+                            <h3 class="book-title">Journey to the Unknown</h3>
+                            <p class="book-author">Robert Lee</p>
+                            <div class="book-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-text">(4.7)</span>
+                            </div>
+                            <div class="book-price">
+                                <span class="price">$27.99</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm add-to-cart" data-book-id="6">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="book-card fade-in">
+                        <div class="book-image">
+                            <img src="https://via.placeholder.com/300x400/1a237e/ffffff?text=Related+3" alt="Book Cover">
+                            <div class="book-overlay">
+                                <a href="book-detail.html" class="btn btn-sm">View Details</a>
+                            </div>
+                        </div>
+                        <div class="book-info">
+                            <h3 class="book-title">Epic Quest</h3>
+                            <p class="book-author">Maria Garcia</p>
+                            <div class="book-rating">
+                                <span class="stars">★★★★☆</span>
+                                <span class="rating-text">(4.6)</span>
+                            </div>
+                            <div class="book-price">
+                                <span class="price">$22.99</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm add-to-cart" data-book-id="7">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="book-card fade-in">
+                        <div class="book-image">
+                            <img src="https://via.placeholder.com/300x400/1a237e/ffffff?text=Related+4" alt="Book Cover">
+                            <div class="book-overlay">
+                                <a href="book-detail.html" class="btn btn-sm">View Details</a>
+                            </div>
+                        </div>
+                        <div class="book-info">
+                            <h3 class="book-title">The Explorer's Guide</h3>
+                            <p class="book-author">David Brown</p>
+                            <div class="book-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-text">(4.9)</span>
+                            </div>
+                            <div class="book-price">
+                                <span class="price">$29.99</span>
+                            </div>
+                            <button class="btn btn-primary btn-sm add-to-cart" data-book-id="8">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>BookVerse</h3>
+                    <p>Your premium destination for books. Discover, read, and enjoy the world of literature.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="shop.html?category=fiction">Fiction</a></li>
+                        <li><a href="shop.html?category=science">Science</a></li>
+                        <li><a href="shop.html?category=business">Business</a></li>
+                        <li><a href="shop.html?category=romance">Romance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>📧 info@bookverse.com</li>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>📍 123 Book Street, Reading City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BookVerse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
+
+
+

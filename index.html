@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookVerse - Your Premium Online Bookstore</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="index.html">Book<span class="logo-accent">Verse</span></a>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search books..." id="searchInput">
+                        <button class="search-btn"><i class="icon-search">🔍</i></button>
+                    </div>
+                    <a href="cart.html" class="cart-icon">
+                        <span class="icon-cart">🛒</span>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title fade-in">Discover Your Next Great Read</h1>
+            <p class="hero-subtitle fade-in">Explore thousands of books across all genres at BookVerse</p>
+            <a href="shop.html" class="btn btn-primary fade-in">Shop Now</a>
+        </div>
+        <div class="hero-image">
+            <div class="hero-banner"><img src="herosectionbooks.png" alt="">
+            <img src="herosectionimage.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Books Section -->
+    <section class="featured-books section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Books</h2>
+                <p class="section-subtitle">Handpicked selections for you</p>
+            </div>
+            <div class="books-grid">
+                <div class="book-card fade-in">
+                    <div class="book-image">
+                        <img src="https://via.placeholder.com/300x400/1a237e/ffffff?text=Book+1" alt="Book Cover">
+                        <div class="book-overlay">
+                            <a href="book-detail.html" class="btn btn-sm">View Details</a>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">The Great Adventure</h3>
+                        <p class="book-author">John Smith</p>
+                        <div class="book-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">(4.8)</span>
+                        </div>
+                        <div class="book-price">
+                            <span class="price">$24.99</span>
+                            <span class="old-price">$29.99</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-book-id="1">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="book-card fade-in">
+                    <div class="book-image">
+                        <img src="https://via.placeholder.com/300x400/1a237e/ffffff?text=Book+2" alt="Book Cover">
+                        <div class="book-overlay">
+                            <a href="book-detail.html" class="btn btn-sm">View Details</a>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Mystery of the Night</h3>
+                        <p class="book-author">Sarah Johnson</p>
+                        <div class="book-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-text">(4.5)</span>
+                        </div>
+                        <div class="book-price">
+                            <span class="price">$19.99</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-book-id="2">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="book-card fade-in">
+                    <div class="book-image">
+                        <img src="https://via.placeholder.com/300x400/1a237e/ffffff?text=Book+3" alt="Book Cover">
+                        <div class="book-overlay">
+                            <a href="book-detail.html" class="btn btn-sm">View Details</a>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Science & Discovery</h3>
+                        <p class="book-author">Dr. Michael Chen</p>
+                        <div class="book-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">(4.9)</span>
+                        </div>
+                        <div class="book-price">
+                            <span class="price">$34.99</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-book-id="3">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="book-card fade-in">
+                    <div class="book-image">
+                        <img src="https://via.placeholder.com/300x400/1a237e/ffffff?text=Book+4" alt="Book Cover">
+                        <div class="book-overlay">
+                            <a href="book-detail.html" class="btn btn-sm">View Details</a>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Love & Romance</h3>
+                        <p class="book-author">Emma Williams</p>
+                        <div class="book-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-text">(4.6)</span>
+                        </div>
+                        <div class="book-price">
+                            <span class="price">$22.99</span>
+                        </div>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-book-id="4">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Browse by Category</h2>
+                <p class="section-subtitle">Find your favorite genre</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card fade-in">
+                    <div class="category-icon">📚</div>
+                    <h3>Fiction</h3>
+                    <p>Explore fictional worlds</p>
+                    <a href="shop.html?category=fiction" class="category-link">View Books →</a>
+                </div>
+                <div class="category-card fade-in">
+                    <div class="category-icon">🔬</div>
+                    <h3>Science</h3>
+                    <p>Discover scientific wonders</p>
+                    <a href="shop.html?category=science" class="category-link">View Books →</a>
+                </div>
+                <div class="category-card fade-in">
+                    <div class="category-icon">💼</div>
+                    <h3>Business</h3>
+                    <p>Grow your career</p>
+                    <a href="shop.html?category=business" class="category-link">View Books →</a>
+                </div>
+                <div class="category-card fade-in">
+                    <div class="category-icon">🎨</div>
+                    <h3>Arts</h3>
+                    <p>Creative inspiration</p>
+                    <a href="shop.html?category=arts" class="category-link">View Books →</a>
+                </div>
+                <div class="category-card fade-in">
+                    <div class="category-icon">📖</div>
+                    <h3>History</h3>
+                    <p>Journey through time</p>
+                    <a href="shop.html?category=history" class="category-link">View Books →</a>
+                </div>
+                <div class="category-card fade-in">
+                    <div class="category-icon">❤️</div>
+                    <h3>Romance</h3>
+                    <p>Love stories</p>
+                    <a href="shop.html?category=romance" class="category-link">View Books →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Readers Say</h2>
+                <p class="section-subtitle">Trusted by thousands of book lovers</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"BookVerse has the best collection of books I've ever seen. The quality and service are outstanding!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JD</div>
+                        <div class="author-info">
+                            <h4>John Doe</h4>
+                            <p>Regular Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Fast shipping and excellent packaging. My books always arrive in perfect condition. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JS</div>
+                        <div class="author-info">
+                            <h4>Jane Smith</h4>
+                            <p>Book Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-rating">★★★★☆</div>
+                    <p class="testimonial-text">"Great prices and an amazing selection. I've found so many rare books here that I couldn't find elsewhere."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RW</div>
+                        <div class="author-info">
+                            <h4>Robert Wilson</h4>
+                            <p>Collector</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter section-padding bg-dark">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">Subscribe to Our Newsletter</h2>
+                <p class="newsletter-subtitle">Get the latest book releases, exclusive offers, and reading recommendations</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>BookVerse</h3>
+                    <p>Your premium destination for books. Discover, read, and enjoy the world of literature.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="shop.html?category=fiction">Fiction</a></li>
+                        <li><a href="shop.html?category=science">Science</a></li>
+                        <li><a href="shop.html?category=business">Business</a></li>
+                        <li><a href="shop.html?category=romance">Romance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>📧 info@bookverse.com</li>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>📍 123 Book Street, Reading City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BookVerse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
+
+
